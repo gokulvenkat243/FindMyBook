@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F5E63972DD8622F0080D565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E638D2DD8622F0080D565 /* AppDelegate.swift */; };
+		7F5E63982DD8622F0080D565 /* FindMyBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E638F2DD8622F0080D565 /* FindMyBook.xcdatamodeld */; };
+		7F5E63992DD8622F0080D565 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63932DD8622F0080D565 /* SceneDelegate.swift */; };
+		7F5E639A2DD8622F0080D565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63942DD8622F0080D565 /* ViewController.swift */; };
+		7F5E639B2DD8622F0080D565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E638E2DD8622F0080D565 /* Assets.xcassets */; };
+		7F5E639D2DD8622F0080D565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E63922DD8622F0080D565 /* LaunchScreen.storyboard */; };
+		7F5E63A02DD862360080D565 /* FindMyBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E639E2DD862360080D565 /* FindMyBookTests.swift */; };
+		7F5E63A42DD8623A0080D565 /* FindMyBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63A12DD8623A0080D565 /* FindMyBookUITests.swift */; };
+		7F5E63A52DD8623A0080D565 /* FindMyBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63A22DD8623A0080D565 /* FindMyBookUITestsLaunchTests.swift */; };
+		7F5E63AE2DD864210080D565 /* TabBarCorrdinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63AD2DD864210080D565 /* TabBarCorrdinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F5E63702DD861F00080D565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F5E634E2DD861EE0080D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5E63552DD861EE0080D565;
+			remoteInfo = FindMyBook;
+		};
+		7F5E637A2DD861F00080D565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F5E634E2DD861EE0080D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5E63552DD861EE0080D565;
+			remoteInfo = FindMyBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F5E63562DD861EE0080D565 /* FindMyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5E636F2DD861F00080D565 /* FindMyBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5E63792DD861F00080D565 /* FindMyBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5E638D2DD8622F0080D565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F5E638E2DD8622F0080D565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F5E63902DD8622F0080D565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5E63912DD8622F0080D565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F5E63932DD8622F0080D565 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F5E63942DD8622F0080D565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F5E63962DD8622F0080D565 /* FindMyBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindMyBook.xcdatamodel; sourceTree = "<group>"; };
+		7F5E639E2DD862360080D565 /* FindMyBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyBookTests.swift; sourceTree = "<group>"; };
+		7F5E63A12DD8623A0080D565 /* FindMyBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyBookUITests.swift; sourceTree = "<group>"; };
+		7F5E63A22DD8623A0080D565 /* FindMyBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F5E63AD2DD864210080D565 /* TabBarCorrdinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCorrdinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F5E63532DD861EE0080D565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5E636C2DD861F00080D565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5E63762DD861F00080D565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F5E634D2DD861EE0080D565 = {
+			isa = PBXGroup;
+			children = (
+				7F5E63952DD8622F0080D565 /* FindMyBook */,
+				7F5E639F2DD862360080D565 /* FindMyBookTests */,
+				7F5E63A32DD8623A0080D565 /* FindMyBookUITests */,
+				7F5E63572DD861EE0080D565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F5E63572DD861EE0080D565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E63562DD861EE0080D565 /* FindMyBook.app */,
+				7F5E636F2DD861F00080D565 /* FindMyBookTests.xctest */,
+				7F5E63792DD861F00080D565 /* FindMyBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F5E63952DD8622F0080D565 /* FindMyBook */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E63AC2DD8640A0080D565 /* Coordinators */,
+				7F5E638D2DD8622F0080D565 /* AppDelegate.swift */,
+				7F5E638E2DD8622F0080D565 /* Assets.xcassets */,
+				7F5E638F2DD8622F0080D565 /* FindMyBook.xcdatamodeld */,
+				7F5E63902DD8622F0080D565 /* Info.plist */,
+				7F5E63922DD8622F0080D565 /* LaunchScreen.storyboard */,
+				7F5E63932DD8622F0080D565 /* SceneDelegate.swift */,
+				7F5E63942DD8622F0080D565 /* ViewController.swift */,
+			);
+			path = FindMyBook;
+			sourceTree = "<group>";
+		};
+		7F5E639F2DD862360080D565 /* FindMyBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E639E2DD862360080D565 /* FindMyBookTests.swift */,
+			);
+			path = FindMyBookTests;
+			sourceTree = "<group>";
+		};
+		7F5E63A32DD8623A0080D565 /* FindMyBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E63A12DD8623A0080D565 /* FindMyBookUITests.swift */,
+				7F5E63A22DD8623A0080D565 /* FindMyBookUITestsLaunchTests.swift */,
+			);
+			path = FindMyBookUITests;
+			sourceTree = "<group>";
+		};
+		7F5E63AC2DD8640A0080D565 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E63AD2DD864210080D565 /* TabBarCorrdinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F5E63552DD861EE0080D565 /* FindMyBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5E63822DD861F00080D565 /* Build configuration list for PBXNativeTarget "FindMyBook" */;
+			buildPhases = (
+				7F5E63522DD861EE0080D565 /* Sources */,
+				7F5E63532DD861EE0080D565 /* Frameworks */,
+				7F5E63542DD861EE0080D565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyBook;
+			packageProductDependencies = (
+			);
+			productName = FindMyBook;
+			productReference = 7F5E63562DD861EE0080D565 /* FindMyBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F5E636E2DD861F00080D565 /* FindMyBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5E63872DD861F00080D565 /* Build configuration list for PBXNativeTarget "FindMyBookTests" */;
+			buildPhases = (
+				7F5E636B2DD861F00080D565 /* Sources */,
+				7F5E636C2DD861F00080D565 /* Frameworks */,
+				7F5E636D2DD861F00080D565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F5E63712DD861F00080D565 /* PBXTargetDependency */,
+			);
+			name = FindMyBookTests;
+			packageProductDependencies = (
+			);
+			productName = FindMyBookTests;
+			productReference = 7F5E636F2DD861F00080D565 /* FindMyBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F5E63782DD861F00080D565 /* FindMyBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5E638A2DD861F00080D565 /* Build configuration list for PBXNativeTarget "FindMyBookUITests" */;
+			buildPhases = (
+				7F5E63752DD861F00080D565 /* Sources */,
+				7F5E63762DD861F00080D565 /* Frameworks */,
+				7F5E63772DD861F00080D565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F5E637B2DD861F00080D565 /* PBXTargetDependency */,
+			);
+			name = FindMyBookUITests;
+			packageProductDependencies = (
+			);
+			productName = FindMyBookUITests;
+			productReference = 7F5E63792DD861F00080D565 /* FindMyBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F5E634E2DD861EE0080D565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					7F5E63552DD861EE0080D565 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					7F5E636E2DD861F00080D565 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 7F5E63552DD861EE0080D565;
+					};
+					7F5E63782DD861F00080D565 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 7F5E63552DD861EE0080D565;
+					};
+				};
+			};
+			buildConfigurationList = 7F5E63512DD861EE0080D565 /* Build configuration list for PBXProject "FindMyBook" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F5E634D2DD861EE0080D565;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7F5E63572DD861EE0080D565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F5E63552DD861EE0080D565 /* FindMyBook */,
+				7F5E636E2DD861F00080D565 /* FindMyBookTests */,
+				7F5E63782DD861F00080D565 /* FindMyBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F5E63542DD861EE0080D565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5E639B2DD8622F0080D565 /* Assets.xcassets in Resources */,
+				7F5E639D2DD8622F0080D565 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5E636D2DD861F00080D565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5E63772DD861F00080D565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F5E63522DD861EE0080D565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5E63972DD8622F0080D565 /* AppDelegate.swift in Sources */,
+				7F5E63982DD8622F0080D565 /* FindMyBook.xcdatamodeld in Sources */,
+				7F5E63992DD8622F0080D565 /* SceneDelegate.swift in Sources */,
+				7F5E63AE2DD864210080D565 /* TabBarCorrdinator.swift in Sources */,
+				7F5E639A2DD8622F0080D565 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5E636B2DD861F00080D565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5E63A02DD862360080D565 /* FindMyBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5E63752DD861F00080D565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5E63A42DD8623A0080D565 /* FindMyBookUITests.swift in Sources */,
+				7F5E63A52DD8623A0080D565 /* FindMyBookUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F5E63712DD861F00080D565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F5E63552DD861EE0080D565 /* FindMyBook */;
+			targetProxy = 7F5E63702DD861F00080D565 /* PBXContainerItemProxy */;
+		};
+		7F5E637B2DD861F00080D565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F5E63552DD861EE0080D565 /* FindMyBook */;
+			targetProxy = 7F5E637A2DD861F00080D565 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F5E63922DD8622F0080D565 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F5E63912DD8622F0080D565 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F5E63832DD861F00080D565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindMyBook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.FindMyBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F5E63842DD861F00080D565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindMyBook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.FindMyBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F5E63852DD861F00080D565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F5E63862DD861F00080D565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F5E63882DD861F00080D565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.FindMyBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyBook";
+			};
+			name = Debug;
+		};
+		7F5E63892DD861F00080D565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.FindMyBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindMyBook";
+			};
+			name = Release;
+		};
+		7F5E638B2DD861F00080D565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.FindMyBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyBook;
+			};
+			name = Debug;
+		};
+		7F5E638C2DD861F00080D565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.FindMyBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F5E63512DD861EE0080D565 /* Build configuration list for PBXProject "FindMyBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5E63852DD861F00080D565 /* Debug */,
+				7F5E63862DD861F00080D565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5E63822DD861F00080D565 /* Build configuration list for PBXNativeTarget "FindMyBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5E63832DD861F00080D565 /* Debug */,
+				7F5E63842DD861F00080D565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5E63872DD861F00080D565 /* Build configuration list for PBXNativeTarget "FindMyBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5E63882DD861F00080D565 /* Debug */,
+				7F5E63892DD861F00080D565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5E638A2DD861F00080D565 /* Build configuration list for PBXNativeTarget "FindMyBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5E638B2DD861F00080D565 /* Debug */,
+				7F5E638C2DD861F00080D565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F5E638F2DD8622F0080D565 /* FindMyBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F5E63962DD8622F0080D565 /* FindMyBook.xcdatamodel */,
+			);
+			currentVersion = 7F5E63962DD8622F0080D565 /* FindMyBook.xcdatamodel */;
+			path = FindMyBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F5E634E2DD861EE0080D565 /* Project object */;
+}
