@@ -20,13 +20,14 @@ final class TabBarCoordinator {
 
     func start() {
 
-        let homeVC = ViewController()
-        homeVC.tabBarItem = UITabBarItem(title: "Search",
-                                         image: UIImage(systemName: "magnifyingglass"), tag: 0)
-
+        let homeVC = HomeViewController()
+        homeVC.tabBarItem = UITabBarItem(title: "Home",
+                                         image: UIImage(systemName: "house"),
+                                         selectedImage: UIImage(systemName: "house.fill"))
         let profileVC = UIViewController()
         profileVC.tabBarItem = UITabBarItem(title: "Favorite",
-                                            image: UIImage(systemName: "star"), tag: 1)
+                                            image: UIImage(systemName: "star"),
+                                            selectedImage: UIImage(systemName: "star.fill"))
 
         tabBarController.viewControllers = [
             UINavigationController(rootViewController: homeVC),
@@ -34,9 +35,10 @@ final class TabBarCoordinator {
             UINavigationController(rootViewController: profileVC)
         ]
 
-        tabBarController.tabBar.tintColor = UIColor.blue
+        tabBarController.tabBar.tintColor = UIColor.gray
         tabBarController.tabBar.unselectedItemTintColor = UIColor.gray
-
+        tabBarController.tabBar.layer.borderWidth = 0.2
+        tabBarController.tabBar.backgroundColor = .white
         navController.setViewControllers([tabBarController], animated: false)
     }
 }
