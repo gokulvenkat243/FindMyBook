@@ -14,7 +14,6 @@ class BooksTableViewCell: UITableViewCell {
         imageView.contentMode = .scaleToFill
         imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
-        imageView.image = UIImage(named: "SilentBook")
         return imageView
     }()
 
@@ -74,5 +73,18 @@ class BooksTableViewCell: UITableViewCell {
             ratingView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             ratingView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
         ])
+    }
+
+    func configure(data: BookItem) {
+        titleLabel.text = data.volumeInfo.title
+        authorLabel.text = data.volumeInfo.authors?.joined(separator: ", ") ?? "Unknown"
+        if let imageUrl = data.volumeInfo.imageLinks?.thumbnail ?? data.volumeInfo.imageLinks?.smallThumbnail
+ {
+            print("✅ Unwrapped URL: \(imageUrl)")
+            bookImageView.loadImage(imageUrl: imageUrl, placeholderAssetName: "EmptyBookImage")
+        } else {
+            print("🚫 Thumbnail URL not found")
+            bookImageView.image = UIImage(named: "EmptyBookImage")
+        }
     }
 }

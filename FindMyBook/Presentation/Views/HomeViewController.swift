@@ -44,12 +44,25 @@ class HomeViewController: UIViewController {
         return tableView
     }()
 
+    private var viewModel: BooksHomeViewModel
+
+    init(viewModel: BooksHomeViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         tableView.dataSource = self
         tableView.delegate = self
-        setupViews()
+        self.setupViews()
+        self.viewModel.fetchTrendingBooks()
+        self.bindViewModel()
     }
 
     private func setupViews() {
@@ -84,23 +97,36 @@ class HomeViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
+
+    private func bindViewModel() {
+        self.viewModel.updateBooksData = {
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel.numberOfItems()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: BooksTableViewCell.defaultReuseIdentifier, for: indexPath) as? BooksTableViewCell else {
             return UITableViewCell()
         }
+        let data = viewModel.getBooksData(index: indexPath.row)
+        cell.configure(data: data)
         cell.accessoryType = .disclosureIndicator
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = BookDetailsViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

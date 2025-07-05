@@ -19,8 +19,11 @@ final class TabBarCoordinator {
     }
 
     func start() {
-
-        let homeVC = HomeViewController()
+        let dataTransfer = DefaultDataTransferService()
+        let repository = DefaultBooksRepository(dataTransferService: dataTransfer)
+        let useCase = DefaultBookUseCase(bookRepository: repository)
+        let viewModel = DefaultBooksHomeViewModel(useCase: useCase)
+        let homeVC = HomeViewController(viewModel: viewModel)
         homeVC.tabBarItem = UITabBarItem(title: "Home",
                                          image: UIImage(systemName: "house"),
                                          selectedImage: UIImage(systemName: "house.fill"))
