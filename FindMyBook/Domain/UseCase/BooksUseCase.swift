@@ -9,6 +9,7 @@ import Foundation
 
 protocol BooksUseCase {
     func fetchTrendingBooks(completion: @escaping (Result<BooksResponseData, Error>) -> Void)
+    func fetchBookDetails(id: String, completion: @escaping (Result<BookDetailsPageData, any Error>) -> Void)
 }
 
 class DefaultBookUseCase: BooksUseCase {
@@ -21,5 +22,9 @@ class DefaultBookUseCase: BooksUseCase {
 
     func fetchTrendingBooks(completion: @escaping (Result<BooksResponseData, any Error>) -> Void) {
         self.bookRepository.fetchTrendingBooks(completion: completion)
+    }
+
+    func fetchBookDetails(id: String, completion: @escaping (Result<BookDetailsPageData, any Error>) -> Void) {
+        self.bookRepository.fetchBookDetails(id: id, completion: completion)
     }
 }

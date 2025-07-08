@@ -125,8 +125,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = BookDetailsViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        let data = viewModel.getBooksData(index: indexPath.row)
+        self.viewModel.showBookDetails(id: data.id)
     }
 }
 

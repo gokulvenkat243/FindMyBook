@@ -22,8 +22,10 @@ final class TabBarCoordinator {
         let dataTransfer = DefaultDataTransferService()
         let repository = DefaultBooksRepository(dataTransferService: dataTransfer)
         let useCase = DefaultBookUseCase(bookRepository: repository)
-        let viewModel = DefaultBooksHomeViewModel(useCase: useCase)
+        let coordinator = BooksCoordinator(navController: navController)
+        let viewModel = DefaultBooksHomeViewModel(useCase: useCase, coordinator: coordinator)
         let homeVC = HomeViewController(viewModel: viewModel)
+        
         homeVC.tabBarItem = UITabBarItem(title: "Home",
                                          image: UIImage(systemName: "house"),
                                          selectedImage: UIImage(systemName: "house.fill"))

@@ -12,15 +12,18 @@ protocol BooksHomeViewModel {
     func numberOfItems() -> Int
     func getBooksData(index: Int) -> BookItem
     var updateBooksData: (() -> Void)? {get set}
+    func showBookDetails(id: String)
 }
 
 class DefaultBooksHomeViewModel: BooksHomeViewModel {
     var updateBooksData: (() -> Void)?
     private var trendingBooksData: [BookItem] = []
     private let useCase: BooksUseCase
+    private let coordinator: BooksCoordinator
 
-    init(useCase: BooksUseCase) {
+    init(useCase: BooksUseCase, coordinator: BooksCoordinator) {
         self.useCase = useCase
+        self.coordinator = coordinator
     }
 
     func fetchTrendingBooks() {
@@ -45,5 +48,9 @@ class DefaultBooksHomeViewModel: BooksHomeViewModel {
 
     func numberOfItems() -> Int {
         return trendingBooksData.count
+    }
+
+    func showBookDetails(id: String) {
+        self.coordinator.showProductDetails(id: id)
     }
 }
