@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class HomeViewController: UIViewController {
 
     private let topView: UIView = {
@@ -26,6 +25,7 @@ class HomeViewController: UIViewController {
         let searchBar: UISearchBar = UISearchBar.construct()
         searchBar.placeholder = "Search Books..."
         searchBar.searchBarStyle = .minimal
+        searchBar.showsCancelButton = true
         return searchBar
     }()
 
@@ -33,6 +33,14 @@ class HomeViewController: UIViewController {
         let label: UILabel = UILabel.construct()
         label.text = "Popular Books"
         label.font = .systemFont(ofSize: 26, weight: .bold)
+        return label
+    }()
+
+    private let searchResultsLabel: UILabel = {
+        let label: UILabel = UILabel.construct()
+        label.text = "Search Results"
+        label.font = .systemFont(ofSize: 26, weight: .bold)
+        label.isHidden = true
         return label
     }()
 
@@ -60,6 +68,7 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .white
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
         self.setupViews()
         self.viewModel.fetchTrendingBooks()
         self.bindViewModel()
@@ -67,7 +76,7 @@ class HomeViewController: UIViewController {
 
     private func setupViews() {
         view.addSubviews(topView, tableView)
-        topView.addSubviews(titleLabel, searchBar, popularLabel)
+        topView.addSubviews(titleLabel, searchBar, popularLabel, searchResultsLabel)
         self.applyConstructs()
     }
 
@@ -91,6 +100,10 @@ class HomeViewController: UIViewController {
             popularLabel.leadingAnchor.constraint(equalTo: topView.leadingAnchor, constant: 20),
             popularLabel.trailingAnchor.constraint(equalTo: topView.trailingAnchor),
 
+            searchResultsLabel.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 26),
+            searchResultsLabel.leadingAnchor.constraint(equalTo: topView.leadingAnchor, constant: 20),
+            searchResultsLabel.trailingAnchor.constraint(equalTo: topView.trailingAnchor),
+
             tableView.topAnchor.constraint(equalTo: topView.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
@@ -99,6 +112,7 @@ class HomeViewController: UIViewController {
     }
 
     private func bindViewModel() {
+
         self.viewModel.updateBooksData = {
             self.tableView.reloadData()
         }
@@ -130,4 +144,28 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+extension HomeViewController: UISearchBarDelegate {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        viewModel.setSearching(true)
+        popularLabel.isHidden = true
+        searchResultsLabel.isHidden = false
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.setSearching(false)
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        popularLabel.isHidden = false
+        searchResultsLabel.isHidden = true
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            viewModel.setSearching(false)
+        } else {
+            viewModel.setSearching(true)
+            viewModel.searchBooks(query: searchText)
+        }
+    }
+}
 

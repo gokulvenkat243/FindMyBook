@@ -19,8 +19,10 @@ class BooksCoordinator {
     func showProductDetails(id: String) {
         let dataTransfer = DefaultDataTransferService()
         let repo = DefaultBooksRepository(dataTransferService: dataTransfer)
-        let useCase = DefaultBookUseCase(bookRepository: repo)
-        let viewModel = DefaultBookDetailsViewModel(useCase: useCase, id: id)
+        let favorite = FavoriteStorage()
+        let useCase = DefaultBookUseCase(bookRepository: repo, favoriteStorage: favorite)
+        let coordinator = BooksCoordinator(navController: navController)
+        let viewModel = DefaultBookDetailsViewModel(useCase: useCase, id: id, coordinator: coordinator)
         let viewController = BookDetailsViewController(viewModel: viewModel)
         self.navController.pushViewController(viewController, animated: true)
     }

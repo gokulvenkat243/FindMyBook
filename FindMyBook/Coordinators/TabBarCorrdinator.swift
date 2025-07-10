@@ -21,15 +21,17 @@ final class TabBarCoordinator {
     func start() {
         let dataTransfer = DefaultDataTransferService()
         let repository = DefaultBooksRepository(dataTransferService: dataTransfer)
-        let useCase = DefaultBookUseCase(bookRepository: repository)
+        let favorite = FavoriteStorage()
+        let useCase = DefaultBookUseCase(bookRepository: repository, favoriteStorage: favorite)
         let coordinator = BooksCoordinator(navController: navController)
         let viewModel = DefaultBooksHomeViewModel(useCase: useCase, coordinator: coordinator)
         let homeVC = HomeViewController(viewModel: viewModel)
-        
         homeVC.tabBarItem = UITabBarItem(title: "Home",
                                          image: UIImage(systemName: "house"),
                                          selectedImage: UIImage(systemName: "house.fill"))
-        let profileVC = UIViewController()
+        
+        let favViewModel = DefaultFavoriteBooksViewModel(usecase: useCase, coordinator: coordinator)
+        let profileVC = FavoriteBooksViewController(viewModel: favViewModel)
         profileVC.tabBarItem = UITabBarItem(title: "Favorite",
                                             image: UIImage(systemName: "star"),
                                             selectedImage: UIImage(systemName: "star.fill"))

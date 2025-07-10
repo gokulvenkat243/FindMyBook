@@ -72,3 +72,29 @@ extension UIImageView {
         }
     }
 }
+
+extension UIViewController {
+    func showToast(message: String, duration: TimeInterval = 2.0) {
+        let toast = ToastView(message: message)
+        toast.alpha = 0.0
+
+        self.view.addSubview(toast)
+        toast.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            toast.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            toast.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            toast.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50)
+        ])
+
+        UIView.animate(withDuration: 0.3, animations: {
+            toast.alpha = 1.0
+        }) { _ in
+            UIView.animate(withDuration: 0.3, delay: duration, options: [], animations: {
+                toast.alpha = 0.0
+            }, completion: { _ in
+                toast.removeFromSuperview()
+            })
+        }
+    }
+}

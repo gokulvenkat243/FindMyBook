@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "88FD27B8-EFC2-4644-922D-7E81ACD6AF83"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D312C47-D205-4336-BB02-8F4D4BB4A97B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyBook/Data/Repositories/BooksRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "searchBooks(query:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D312C47-D205-4336-BB02-8F4D4BB4A97B - 5c10fa932c447f0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FindMyBook.DefaultBooksRepository.searchBooks(query: Swift.String, completion: (Swift.Result&lt;FindMyBook.BooksResponseData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Data/Repositories/BooksRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41">
+               </Location>
+               <Location
+                  uuid = "1D312C47-D205-4336-BB02-8F4D4BB4A97B - 5b604f04398d0f10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;FindMyBook.ApiBooksModel, Swift.Error&gt;) -&gt; () in FindMyBook.DefaultBooksRepository.searchBooks(query: Swift.String, completion: (Swift.Result&lt;FindMyBook.BooksResponseData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Data/Repositories/BooksRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08DB6D7B-FBEC-48FD-AD5A-17EA16CCF3A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyBook/Data/Repositories/BooksRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "searchBooks(query:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "08DB6D7B-FBEC-48FD-AD5A-17EA16CCF3A3 - 5b604f04398d0fd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;FindMyBook.ApiBooksModel, Swift.Error&gt;) -&gt; () in FindMyBook.DefaultBooksRepository.searchBooks(query: Swift.String, completion: (Swift.Result&lt;FindMyBook.BooksResponseData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Data/Repositories/BooksRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "08DB6D7B-FBEC-48FD-AD5A-17EA16CCF3A3 - 5b604f04398d0fd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;FindMyBook.ApiBooksModel, Swift.Error&gt;) -&gt; () in FindMyBook.DefaultBooksRepository.searchBooks(query: Swift.String, completion: (Swift.Result&lt;FindMyBook.BooksResponseData, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Data/Repositories/BooksRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02E6AEAE-4572-4578-AC34-6C9FF8D56A50"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyBook/Data/Repositories/BooksRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "searchBooks(query:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CDCAA5F-DBE7-4A1F-B7BA-D1AC5D7419E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyBook/Presentation/ViewModels/BooksHomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "searchBooks(query:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CDCAA5F-DBE7-4A1F-B7BA-D1AC5D7419E0 - 154fe1719862e0f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FindMyBook.DefaultBooksHomeViewModel.searchBooks(query: Swift.String) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Presentation/ViewModels/BooksHomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50">
+               </Location>
+               <Location
+                  uuid = "4CDCAA5F-DBE7-4A1F-B7BA-D1AC5D7419E0 - b4f04cdb9fca69b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;FindMyBook.BooksResponseData, Swift.Error&gt;) -&gt; () in FindMyBook.DefaultBooksHomeViewModel.searchBooks(query: Swift.String) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Presentation/ViewModels/BooksHomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24994F6D-6D4E-43C1-8E00-0EE5697B3D5C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyBook/Presentation/ViewModels/BooksHomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "searchBooks(query:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "24994F6D-6D4E-43C1-8E00-0EE5697B3D5C - 55085c8909e01e97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;FindMyBook.BooksResponseData, Swift.Error&gt;) -&gt; () in FindMyBook.DefaultBooksHomeViewModel.searchBooks(query: Swift.String) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Presentation/ViewModels/BooksHomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+               <Location
+                  uuid = "24994F6D-6D4E-43C1-8E00-0EE5697B3D5C - 55085c8909e01e97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;FindMyBook.BooksResponseData, Swift.Error&gt;) -&gt; () in FindMyBook.DefaultBooksHomeViewModel.searchBooks(query: Swift.String) -&gt; ()"
+                  moduleName = "FindMyBook.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulv/Workspace/FindMyBook/FindMyBook/Presentation/ViewModels/BooksHomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "783A54D8-B84B-47AB-AAA9-99ADF9827F6E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyBook/Presentation/ViewModels/BooksHomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "searchBooks(query:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52F5F7AC-C62B-47C6-B15D-51BF0496196F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FindMyBook/Presentation/Views/FavoriteBooksViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -56,6 +56,11 @@ class BookDetailsViewController: UIViewController {
         bookDetailsTopView.delegate = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
     private func setupViews() {
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
@@ -63,6 +68,38 @@ class BookDetailsViewController: UIViewController {
         [bookDetailsTopView, bookDetailsBottomView].forEach { stackView.addArrangedSubview($0) }
         self.applyConstraints()
         self.bindViewModel()
+        self.setupBarButtons()
+    }
+
+    private func setupBarButtons() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .done, target: self, action: #selector(tapBackButton))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: favoriteIcon(), style: .done, target: self, action: #selector(toggleFavorite))
+    }
+
+    private func favoriteIcon() -> UIImage? {
+        let id = viewModel.bookDetailsData?.id ?? ""
+        let isFav = FavoriteStorage.shared.isFavorite(id: id)
+        let iconName = isFav ? "heart.fill" : "heart"
+        return UIImage(systemName: iconName)
+    }
+
+    private func updateFavoriteIcon() {
+        navigationItem.rightBarButtonItem?.image = favoriteIcon()
+    }
+
+    @objc private func toggleFavorite() {
+        guard let book = viewModel.bookDetailsData else { return }
+
+        if FavoriteStorage.shared.isFavorite(id: book.id) {
+            FavoriteStorage.shared.removeFavorite(id: book.id)
+            self.showToast(message: "Removed From Favorite💔")
+
+        } else {
+            FavoriteStorage.shared.addFavorite(data: book)
+            self.showToast(message: "Added To Favorite❤️")
+        }
+
+        updateFavoriteIcon()
     }
 
     private func applyConstraints() {
@@ -94,7 +131,7 @@ class BookDetailsViewController: UIViewController {
 
     @objc
     private func tapBackButton() {
-        
+        self.viewModel.tapToBackButton()
     }
 }
 

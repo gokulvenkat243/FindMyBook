@@ -28,6 +28,7 @@ final class BookDetailTopView: UIView {
         label.text = "Atomic Habits"
         label.font = .systemFont(ofSize: 30, weight: .bold)
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
 
@@ -36,6 +37,7 @@ final class BookDetailTopView: UIView {
         label.text = "A Contemporary Issues Approach"
         label.font = .systemFont(ofSize: 15, weight: .light)
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
 
@@ -45,6 +47,7 @@ final class BookDetailTopView: UIView {
         label.font = .systemFont(ofSize: 20, weight: .regular)
         label.textAlignment = .center
         label.textColor = .systemGreen
+        label.numberOfLines = 0
         return label
     }()
 
@@ -52,6 +55,7 @@ final class BookDetailTopView: UIView {
         let label = UILabel()
         label.text = "Description"
         label.font = .systemFont(ofSize: 20, weight: .semibold)
+        label.numberOfLines = 0
         return label
     }()
 
@@ -159,6 +163,7 @@ final class BookDetailTopView: UIView {
         authorLabel.text = data.authors?.joined(separator: ", ") ?? "Unknown"
         bookImageView.loadImage(imageUrl: data.thumbnail)
         descriptionLabel.text = data.description
+        bookImageView.loadImage(imageUrl: data.thumbnail)
     }
 
     @objc

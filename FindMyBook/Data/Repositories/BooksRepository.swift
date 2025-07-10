@@ -10,6 +10,7 @@ import Foundation
 protocol BooksRepository {
     func fetchTrendingBooks(completion: @escaping(Result<BooksResponseData, Error>) -> Void)
     func fetchBookDetails(id: String, completion: @escaping (Result<BookDetailsPageData, any Error>) -> Void)
+    func searchBooks(query: String, completion: @escaping (Result<BooksResponseData, Error>) -> Void)
 }
 
 class DefaultBooksRepository: BooksRepository {
@@ -22,6 +23,20 @@ class DefaultBooksRepository: BooksRepository {
     func fetchTrendingBooks(completion: @escaping (Result<BooksResponseData, any Error>) -> Void) {
         let urlPath = APIEndPoints.getTrendingBooks()
         print(urlPath)
+
+        dataTransferService.request(urlPath: urlPath) { (result: Result<ApiBooksModel, Error>)  in
+            switch result {
+            case .success(let success):
+                let data = success.toDomain()
+                completion(.success(data))
+            case .failure(let failure):
+                completion(.failure(failure))
+            }
+        }
+    }
+
+    func searchBooks(query: String, completion: @escaping (Result<BooksResponseData, Error>) -> Void) {
+        let urlPath = APIEndPoints.getSearchResults(query: query)
 
         dataTransferService.request(urlPath: urlPath) { (result: Result<ApiBooksModel, Error>)  in
             switch result {

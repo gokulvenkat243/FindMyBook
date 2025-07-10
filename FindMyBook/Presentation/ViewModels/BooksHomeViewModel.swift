@@ -13,6 +13,8 @@ protocol BooksHomeViewModel {
     func getBooksData(index: Int) -> BookItem
     var updateBooksData: (() -> Void)? {get set}
     func showBookDetails(id: String)
+    func searchBooks(query: String)
+    func setSearching(_ searching: Bool)
 }
 
 class DefaultBooksHomeViewModel: BooksHomeViewModel {
@@ -20,6 +22,8 @@ class DefaultBooksHomeViewModel: BooksHomeViewModel {
     private var trendingBooksData: [BookItem] = []
     private let useCase: BooksUseCase
     private let coordinator: BooksCoordinator
+    private var searchResults: [BookItem] = []
+    private var isSearching: Bool = false
 
     init(useCase: BooksUseCase, coordinator: BooksCoordinator) {
         self.useCase = useCase
@@ -42,12 +46,37 @@ class DefaultBooksHomeViewModel: BooksHomeViewModel {
         }
     }
 
+    func searchBooks(query: String) {
+        self.useCase.searchBooks(query: query) { [weak self] result in
+            guard let self = self else { return }
+
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let success):
+                    self.searchResults = success.items ?? []
+                    self.updateBooksData?()
+                case .failure(let failure):
+                    print(failure)
+                }
+            }
+        }
+    }
+
+    func setSearching(_ searching: Bool) {
+        self.isSearching = searching
+        if !searching {
+            self.searchResults = []
+            updateBooksData?()
+        }
+    }
+
+
     func getBooksData(index: Int) -> BookItem {
-        return trendingBooksData[index]
+        return isSearching ? searchResults[index] : trendingBooksData[index]
     }
 
     func numberOfItems() -> Int {
-        return trendingBooksData.count
+        return isSearching ? searchResults.count : trendingBooksData.count
     }
 
     func showBookDetails(id: String) {
