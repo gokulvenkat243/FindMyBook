@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E56FC776FF907EDDBD5715BCF45E1D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		368207FF96879AE3CF7BA1091476D131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		3D0AE7D6951645DF4715854F610DCF4D /* Pods-FindMyBookTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E56FE8BE0890E0E89E1AE97035069A /* Pods-FindMyBookTests-dummy.m */; };
+		5CEBC718D161BE586C2507629F8E1695 /* Pods-FindMyBook-FindMyBookUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F472ADC117742100E402974FD59C0456 /* Pods-FindMyBook-FindMyBookUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70493AFC4C83CAD2823E09DD6A839DEC /* Pods-FindMyBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F5BF77AA0E3FFDF196771616CB01AF /* Pods-FindMyBook-dummy.m */; };
+		C5DF10759A9592DE02B799FC3D0EE598 /* Pods-FindMyBook-FindMyBookUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84433A7419C65592030BFE97766F1E66 /* Pods-FindMyBook-FindMyBookUITests-dummy.m */; };
+		CF90AFC2DEB4545D7007CDFCC207A31F /* Pods-FindMyBook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FC6EC77BC6775C82ADEABBE45E872C /* Pods-FindMyBook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D06E712FFE9AFF9809A906B9A0A94A6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		EA8A8DFEE97A1F1486A31207CCF0A377 /* Pods-FindMyBookTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A6443C0567B920E84F9C63363B7EAEC /* Pods-FindMyBookTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AC6CA8E17F715499BA3B609653CDA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F96E1F059FCA5328A68952CFE25400C0;
+			remoteInfo = "Pods-FindMyBook";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000A0A398EDEE51CC94170D4F8035F0D /* Pods-FindMyBook-FindMyBookUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyBook-FindMyBookUITests-Info.plist"; sourceTree = "<group>"; };
+		00760AC46AA84DAAB26045250583526E /* Pods-FindMyBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyBookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		01FC6EC77BC6775C82ADEABBE45E872C /* Pods-FindMyBook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindMyBook-umbrella.h"; sourceTree = "<group>"; };
+		20E56FE8BE0890E0E89E1AE97035069A /* Pods-FindMyBookTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindMyBookTests-dummy.m"; sourceTree = "<group>"; };
+		30F14AC167A638687D685DA109014F1A /* Pods-FindMyBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindMyBook.modulemap"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		53BCD842B9C88C8675E7827C6E92FF33 /* Pods-FindMyBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyBook.release.xcconfig"; sourceTree = "<group>"; };
+		58B942E2C7FF3270C396114F626BB5CE /* Pods-FindMyBook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyBook-acknowledgements.plist"; sourceTree = "<group>"; };
+		60E33E065347FD2136BEB3CECC6C7958 /* Pods-FindMyBookTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindMyBookTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		620B60D897A2051509F195788153B0FD /* Pods-FindMyBook-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyBook-Info.plist"; sourceTree = "<group>"; };
+		68C568DCCD7D2A9F6B74E5783458DCB8 /* Pods-FindMyBook-FindMyBookUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FindMyBook-FindMyBookUITests"; path = Pods_FindMyBook_FindMyBookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6443C0567B920E84F9C63363B7EAEC /* Pods-FindMyBookTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindMyBookTests-umbrella.h"; sourceTree = "<group>"; };
+		7FEF3330F1D8C5302422281D9C07C6EC /* Pods-FindMyBookTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyBookTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		84433A7419C65592030BFE97766F1E66 /* Pods-FindMyBook-FindMyBookUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindMyBook-FindMyBookUITests-dummy.m"; sourceTree = "<group>"; };
+		86B3FC90FD3C51283F1F92B22C45B201 /* Pods-FindMyBook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindMyBook-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D50CD68DB2FEAFDC0D7586ABC2EFA64 /* Pods-FindMyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyBook.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3B7BFEAAE9CFEE26230383B78FB9CA5 /* Pods-FindMyBookTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FindMyBookTests"; path = Pods_FindMyBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A453C0E3C61EDCC25A4D1E5F532C361E /* Pods-FindMyBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyBookTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4F5BF77AA0E3FFDF196771616CB01AF /* Pods-FindMyBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindMyBook-dummy.m"; sourceTree = "<group>"; };
+		AB23CE811E4B207C5CE0D6367A42CA91 /* Pods-FindMyBook-FindMyBookUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindMyBook-FindMyBookUITests.modulemap"; sourceTree = "<group>"; };
+		B2FEA295E238D759D0BED710034C3473 /* Pods-FindMyBookTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyBookTests-Info.plist"; sourceTree = "<group>"; };
+		B33D2030E7662B25A5D0989962EA7E10 /* Pods-FindMyBookTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindMyBookTests.modulemap"; sourceTree = "<group>"; };
+		B724F2B3E52E55C5AED789396D623B58 /* Pods-FindMyBook */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FindMyBook"; path = Pods_FindMyBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D9A0DB04193794954E74F5579D5515 /* Pods-FindMyBook-FindMyBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyBook-FindMyBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C72285D1AF9603FCAF53F4ADB0DB2902 /* Pods-FindMyBook-FindMyBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyBook-FindMyBookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D4C5EF4BF34A2CADA2A2979D4DE9675D /* Pods-FindMyBook-FindMyBookUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyBook-FindMyBookUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F472ADC117742100E402974FD59C0456 /* Pods-FindMyBook-FindMyBookUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindMyBook-FindMyBookUITests-umbrella.h"; sourceTree = "<group>"; };
+		FE4F1C50377DA5E2CC82C437B5A8B608 /* Pods-FindMyBook-FindMyBookUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindMyBook-FindMyBookUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		069D458AD2EA45F97946158BE4A27249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06E712FFE9AFF9809A906B9A0A94A6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D46795B03921869C581F5189EAACCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368207FF96879AE3CF7BA1091476D131 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B657E9C9EA58C69A68EC26A3C1B6BAA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E56FC776FF907EDDBD5715BCF45E1D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B18F26182F108A5F2B0B217E3F3C758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B724F2B3E52E55C5AED789396D623B58 /* Pods-FindMyBook */,
+				68C568DCCD7D2A9F6B74E5783458DCB8 /* Pods-FindMyBook-FindMyBookUITests */,
+				A3B7BFEAAE9CFEE26230383B78FB9CA5 /* Pods-FindMyBookTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C318A267A335D7CB1F34BC9318F8FD8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61958C762BE63DE5B5C9CE1908A6FB51 /* Pods-FindMyBook */,
+				749F27BDD3BD8143D6839AC698A2E8BC /* Pods-FindMyBook-FindMyBookUITests */,
+				EB691D3FBE8EE983D6B76344B037F75D /* Pods-FindMyBookTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		61958C762BE63DE5B5C9CE1908A6FB51 /* Pods-FindMyBook */ = {
+			isa = PBXGroup;
+			children = (
+				30F14AC167A638687D685DA109014F1A /* Pods-FindMyBook.modulemap */,
+				86B3FC90FD3C51283F1F92B22C45B201 /* Pods-FindMyBook-acknowledgements.markdown */,
+				58B942E2C7FF3270C396114F626BB5CE /* Pods-FindMyBook-acknowledgements.plist */,
+				A4F5BF77AA0E3FFDF196771616CB01AF /* Pods-FindMyBook-dummy.m */,
+				620B60D897A2051509F195788153B0FD /* Pods-FindMyBook-Info.plist */,
+				01FC6EC77BC6775C82ADEABBE45E872C /* Pods-FindMyBook-umbrella.h */,
+				9D50CD68DB2FEAFDC0D7586ABC2EFA64 /* Pods-FindMyBook.debug.xcconfig */,
+				53BCD842B9C88C8675E7827C6E92FF33 /* Pods-FindMyBook.release.xcconfig */,
+			);
+			name = "Pods-FindMyBook";
+			path = "Target Support Files/Pods-FindMyBook";
+			sourceTree = "<group>";
+		};
+		749F27BDD3BD8143D6839AC698A2E8BC /* Pods-FindMyBook-FindMyBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB23CE811E4B207C5CE0D6367A42CA91 /* Pods-FindMyBook-FindMyBookUITests.modulemap */,
+				FE4F1C50377DA5E2CC82C437B5A8B608 /* Pods-FindMyBook-FindMyBookUITests-acknowledgements.markdown */,
+				D4C5EF4BF34A2CADA2A2979D4DE9675D /* Pods-FindMyBook-FindMyBookUITests-acknowledgements.plist */,
+				84433A7419C65592030BFE97766F1E66 /* Pods-FindMyBook-FindMyBookUITests-dummy.m */,
+				000A0A398EDEE51CC94170D4F8035F0D /* Pods-FindMyBook-FindMyBookUITests-Info.plist */,
+				F472ADC117742100E402974FD59C0456 /* Pods-FindMyBook-FindMyBookUITests-umbrella.h */,
+				B7D9A0DB04193794954E74F5579D5515 /* Pods-FindMyBook-FindMyBookUITests.debug.xcconfig */,
+				C72285D1AF9603FCAF53F4ADB0DB2902 /* Pods-FindMyBook-FindMyBookUITests.release.xcconfig */,
+			);
+			name = "Pods-FindMyBook-FindMyBookUITests";
+			path = "Target Support Files/Pods-FindMyBook-FindMyBookUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2B18F26182F108A5F2B0B217E3F3C758 /* Products */,
+				3C318A267A335D7CB1F34BC9318F8FD8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB691D3FBE8EE983D6B76344B037F75D /* Pods-FindMyBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				B33D2030E7662B25A5D0989962EA7E10 /* Pods-FindMyBookTests.modulemap */,
+				60E33E065347FD2136BEB3CECC6C7958 /* Pods-FindMyBookTests-acknowledgements.markdown */,
+				7FEF3330F1D8C5302422281D9C07C6EC /* Pods-FindMyBookTests-acknowledgements.plist */,
+				20E56FE8BE0890E0E89E1AE97035069A /* Pods-FindMyBookTests-dummy.m */,
+				B2FEA295E238D759D0BED710034C3473 /* Pods-FindMyBookTests-Info.plist */,
+				7A6443C0567B920E84F9C63363B7EAEC /* Pods-FindMyBookTests-umbrella.h */,
+				00760AC46AA84DAAB26045250583526E /* Pods-FindMyBookTests.debug.xcconfig */,
+				A453C0E3C61EDCC25A4D1E5F532C361E /* Pods-FindMyBookTests.release.xcconfig */,
+			);
+			name = "Pods-FindMyBookTests";
+			path = "Target Support Files/Pods-FindMyBookTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7BE3FC4B4031110DC453E5E53682217B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8A8DFEE97A1F1486A31207CCF0A377 /* Pods-FindMyBookTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC21D130735DA032BFD5A09DDA969311 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF90AFC2DEB4545D7007CDFCC207A31F /* Pods-FindMyBook-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18E6140EE3E111248F757D4DCC3CC2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CEBC718D161BE586C2507629F8E1695 /* Pods-FindMyBook-FindMyBookUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		59F35C7F1DBB08A6249660EFA1FF1701 /* Pods-FindMyBook-FindMyBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D2B72F81DE04AB83D777F2B109764C /* Build configuration list for PBXNativeTarget "Pods-FindMyBook-FindMyBookUITests" */;
+			buildPhases = (
+				F18E6140EE3E111248F757D4DCC3CC2B /* Headers */,
+				962469DBF215CD0F168B74D00A3FAE7E /* Sources */,
+				069D458AD2EA45F97946158BE4A27249 /* Frameworks */,
+				0FD9D1D87B97DF8B4714A682C07A97A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FindMyBook-FindMyBookUITests";
+			productName = Pods_FindMyBook_FindMyBookUITests;
+			productReference = 68C568DCCD7D2A9F6B74E5783458DCB8 /* Pods-FindMyBook-FindMyBookUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA1FC3D1678CA5A53DE7F21FD717C5C1 /* Pods-FindMyBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ABA72D5B65339D80959A84AAE35A490 /* Build configuration list for PBXNativeTarget "Pods-FindMyBookTests" */;
+			buildPhases = (
+				7BE3FC4B4031110DC453E5E53682217B /* Headers */,
+				781894F8AB424B436FE9E40FD70C6A21 /* Sources */,
+				54D46795B03921869C581F5189EAACCB /* Frameworks */,
+				ED5D84A710200BF354D4AC048F79D15B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				951AA9B2C64B0038138153BF53848B7A /* PBXTargetDependency */,
+			);
+			name = "Pods-FindMyBookTests";
+			productName = Pods_FindMyBookTests;
+			productReference = A3B7BFEAAE9CFEE26230383B78FB9CA5 /* Pods-FindMyBookTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F96E1F059FCA5328A68952CFE25400C0 /* Pods-FindMyBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DE1FFC9738804F6650C91396B068012 /* Build configuration list for PBXNativeTarget "Pods-FindMyBook" */;
+			buildPhases = (
+				EC21D130735DA032BFD5A09DDA969311 /* Headers */,
+				619642E67D3444B05042B33CA5CD1D64 /* Sources */,
+				B657E9C9EA58C69A68EC26A3C1B6BAA3 /* Frameworks */,
+				B7D225FF896E0A4E0A75F7BFFD634347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FindMyBook";
+			productName = Pods_FindMyBook;
+			productReference = B724F2B3E52E55C5AED789396D623B58 /* Pods-FindMyBook */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2B18F26182F108A5F2B0B217E3F3C758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F96E1F059FCA5328A68952CFE25400C0 /* Pods-FindMyBook */,
+				59F35C7F1DBB08A6249660EFA1FF1701 /* Pods-FindMyBook-FindMyBookUITests */,
+				CA1FC3D1678CA5A53DE7F21FD717C5C1 /* Pods-FindMyBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FD9D1D87B97DF8B4714A682C07A97A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D225FF896E0A4E0A75F7BFFD634347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5D84A710200BF354D4AC048F79D15B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		619642E67D3444B05042B33CA5CD1D64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70493AFC4C83CAD2823E09DD6A839DEC /* Pods-FindMyBook-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781894F8AB424B436FE9E40FD70C6A21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0AE7D6951645DF4715854F610DCF4D /* Pods-FindMyBookTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962469DBF215CD0F168B74D00A3FAE7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DF10759A9592DE02B799FC3D0EE598 /* Pods-FindMyBook-FindMyBookUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		951AA9B2C64B0038138153BF53848B7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FindMyBook";
+			target = F96E1F059FCA5328A68952CFE25400C0 /* Pods-FindMyBook */;
+			targetProxy = 1AC6CA8E17F715499BA3B609653CDA04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09127627F7F4A73ABBAFE81FC8A56014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A453C0E3C61EDCC25A4D1E5F532C361E /* Pods-FindMyBookTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyBookTests/Pods-FindMyBookTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyBookTests/Pods-FindMyBookTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59E8734DA70715406493CA912F854277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A49448602EC1B17D12ADB02D6EE73BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		68316FAB59CED1792E711E9A3C3F7BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53BCD842B9C88C8675E7827C6E92FF33 /* Pods-FindMyBook.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyBook/Pods-FindMyBook-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyBook/Pods-FindMyBook.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7356552575E0C870C3AA0B24784FF86A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00760AC46AA84DAAB26045250583526E /* Pods-FindMyBookTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyBookTests/Pods-FindMyBookTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyBookTests/Pods-FindMyBookTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A7290ACC1C4E4B18756244493B46F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D9A0DB04193794954E74F5579D5515 /* Pods-FindMyBook-FindMyBookUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyBook-FindMyBookUITests/Pods-FindMyBook-FindMyBookUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyBook-FindMyBookUITests/Pods-FindMyBook-FindMyBookUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C976CED425CADEFD374EDD3DC3A180D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C72285D1AF9603FCAF53F4ADB0DB2902 /* Pods-FindMyBook-FindMyBookUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyBook-FindMyBookUITests/Pods-FindMyBook-FindMyBookUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyBook-FindMyBookUITests/Pods-FindMyBook-FindMyBookUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D26EF4A4CF3FA2FEA3B7FFD40A369C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D50CD68DB2FEAFDC0D7586ABC2EFA64 /* Pods-FindMyBook.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyBook/Pods-FindMyBook-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyBook/Pods-FindMyBook.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E8734DA70715406493CA912F854277 /* Debug */,
+				5A49448602EC1B17D12ADB02D6EE73BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DE1FFC9738804F6650C91396B068012 /* Build configuration list for PBXNativeTarget "Pods-FindMyBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26EF4A4CF3FA2FEA3B7FFD40A369C44 /* Debug */,
+				68316FAB59CED1792E711E9A3C3F7BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ABA72D5B65339D80959A84AAE35A490 /* Build configuration list for PBXNativeTarget "Pods-FindMyBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7356552575E0C870C3AA0B24784FF86A /* Debug */,
+				09127627F7F4A73ABBAFE81FC8A56014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D2B72F81DE04AB83D777F2B109764C /* Build configuration list for PBXNativeTarget "Pods-FindMyBook-FindMyBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7290ACC1C4E4B18756244493B46F87 /* Debug */,
+				C976CED425CADEFD374EDD3DC3A180D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

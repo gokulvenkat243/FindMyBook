@@ -1,0 +1,6 @@
+framework module Pods_FindMyBook_FindMyBookUITests {
+  umbrella header "Pods-FindMyBook-FindMyBookUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
