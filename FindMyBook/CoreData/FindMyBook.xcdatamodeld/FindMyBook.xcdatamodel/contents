@@ -6,4 +6,9 @@
         <attribute name="thumbnailURL" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="HistoryEntity" representedClassName="HistoryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="viewedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
 </model>

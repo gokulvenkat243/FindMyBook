@@ -26,6 +26,8 @@
 		7F24D1142E1EA6DE00D06F30 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F24D1132E1EA6DE00D06F30 /* FavoriteTableViewCell.swift */; };
 		7F24D1162E1EA91000D06F30 /* FavoriteBooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F24D1152E1EA91000D06F30 /* FavoriteBooksViewModel.swift */; };
 		7F24D1182E20091500D06F30 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F24D1172E20091500D06F30 /* ToastView.swift */; };
+		7F24D11D2E21473700D06F30 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F24D11C2E21473700D06F30 /* HistoryViewController.swift */; };
+		7F24D11F2E21486B00D06F30 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F24D11E2E21486B00D06F30 /* HistoryViewModel.swift */; };
 		7F5E63972DD8622F0080D565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E638D2DD8622F0080D565 /* AppDelegate.swift */; };
 		7F5E63982DD8622F0080D565 /* FindMyBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E638F2DD8622F0080D565 /* FindMyBook.xcdatamodeld */; };
 		7F5E63992DD8622F0080D565 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63932DD8622F0080D565 /* SceneDelegate.swift */; };
@@ -39,6 +41,9 @@
 		7F5E63B12DDB6D9A0080D565 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63B02DDB6D9A0080D565 /* BooksTableViewCell.swift */; };
 		7F5E63BB2E12BDC20080D565 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63BA2E12BDC20080D565 /* Extensions.swift */; };
 		7F5E63E42E14100B0080D565 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E63E32E14100B0080D565 /* DataTransferService.swift */; };
+		7FBE9B792E250617001F9AC1 /* HistoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE9B782E250617001F9AC1 /* HistoryStorage.swift */; };
+		7FBE9B7B2E2542C0001F9AC1 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE9B7A2E2542C0001F9AC1 /* HistoryModel.swift */; };
+		7FBE9B7D2E25459A001F9AC1 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE9B7C2E25459A001F9AC1 /* HistoryTableViewCell.swift */; };
 		EA335A5CF2FE92A3ED4AA043 /* Pods_FindMyBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D2E8CA6BD9FAB510588E60 /* Pods_FindMyBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +86,8 @@
 		7F24D1132E1EA6DE00D06F30 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		7F24D1152E1EA91000D06F30 /* FavoriteBooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBooksViewModel.swift; sourceTree = "<group>"; };
 		7F24D1172E20091500D06F30 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		7F24D11C2E21473700D06F30 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		7F24D11E2E21486B00D06F30 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		7F5E63562DD861EE0080D565 /* FindMyBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5E636F2DD861F00080D565 /* FindMyBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5E63792DD861F00080D565 /* FindMyBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +106,9 @@
 		7F5E63BA2E12BDC20080D565 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7F5E63E32E14100B0080D565 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		7F73FFCEFFB1F8018D264965 /* Pods-FindMyBook-FindMyBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyBook-FindMyBookUITests.release.xcconfig"; path = "Target Support Files/Pods-FindMyBook-FindMyBookUITests/Pods-FindMyBook-FindMyBookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FBE9B782E250617001F9AC1 /* HistoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStorage.swift; sourceTree = "<group>"; };
+		7FBE9B7A2E2542C0001F9AC1 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		7FBE9B7C2E25459A001F9AC1 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		B25AD0384ED56C1EF8508606 /* Pods-FindMyBook-FindMyBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyBook-FindMyBookUITests.debug.xcconfig"; path = "Target Support Files/Pods-FindMyBook-FindMyBookUITests/Pods-FindMyBook-FindMyBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6EE97EC28FB73082D9EDBB2 /* Pods_FindMyBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA485EAC6A56DEB98FCC2721 /* Pods-FindMyBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyBook.debug.xcconfig"; path = "Target Support Files/Pods-FindMyBook/Pods-FindMyBook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +279,7 @@
 			children = (
 				7F5E63B02DDB6D9A0080D565 /* BooksTableViewCell.swift */,
 				7F24D1132E1EA6DE00D06F30 /* FavoriteTableViewCell.swift */,
+				7FBE9B7C2E25459A001F9AC1 /* HistoryTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -304,6 +315,7 @@
 				7F24D0A32E16AD7800D06F30 /* BooksModel.swift */,
 				7F24D0ED2E1BAD9E00D06F30 /* BookDetailsPageData.swift */,
 				7F24D0FB2E1E9B2500D06F30 /* FavoriteBooksModel.swift */,
+				7FBE9B7A2E2542C0001F9AC1 /* HistoryModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -339,6 +351,7 @@
 			children = (
 				7F24D0AB2E16B62400D06F30 /* BooksRepository.swift */,
 				7F24D1032E1E9CD100D06F30 /* FavoriteStorage.swift */,
+				7FBE9B782E250617001F9AC1 /* HistoryStorage.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -358,6 +371,7 @@
 				7F24D09B2E141A6400D06F30 /* BooksHomeViewModel.swift */,
 				7F24D0EB2E1BAC1900D06F30 /* BookDetailsViewModel.swift */,
 				7F24D1152E1EA91000D06F30 /* FavoriteBooksViewModel.swift */,
+				7F24D11E2E21486B00D06F30 /* HistoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -368,6 +382,7 @@
 				7F5E63942DD8622F0080D565 /* HomeViewController.swift */,
 				7F24D0CC2E18E67100D06F30 /* BookDetailsViewController.swift */,
 				7F24D1112E1EA5F700D06F30 /* FavoriteBooksViewController.swift */,
+				7F24D11C2E21473700D06F30 /* HistoryViewController.swift */,
 				7F24D0D82E18EB2B00D06F30 /* SubViews */,
 				7F5E63C62E12D4070080D565 /* TableViewCell */,
 			);
@@ -594,9 +609,14 @@
 				7F24D1182E20091500D06F30 /* ToastView.swift in Sources */,
 				7F24D0D92E18EB2B00D06F30 /* BookDetailTopView.swift in Sources */,
 				7F24D0EC2E1BAC1900D06F30 /* BookDetailsViewModel.swift in Sources */,
+				7F24D11D2E21473700D06F30 /* HistoryViewController.swift in Sources */,
+				7FBE9B7B2E2542C0001F9AC1 /* HistoryModel.swift in Sources */,
+				7FBE9B792E250617001F9AC1 /* HistoryStorage.swift in Sources */,
 				7F24D1042E1E9CD100D06F30 /* FavoriteStorage.swift in Sources */,
+				7F24D11F2E21486B00D06F30 /* HistoryViewModel.swift in Sources */,
 				7F24D1162E1EA91000D06F30 /* FavoriteBooksViewModel.swift in Sources */,
 				7F24D09C2E141A6400D06F30 /* BooksHomeViewModel.swift in Sources */,
+				7FBE9B7D2E25459A001F9AC1 /* HistoryTableViewCell.swift in Sources */,
 				7F24D0CD2E18E67100D06F30 /* BookDetailsViewController.swift in Sources */,
 				7F24D0AC2E16B62400D06F30 /* BooksRepository.swift in Sources */,
 				7F24D1122E1EA5F700D06F30 /* FavoriteBooksViewController.swift in Sources */,

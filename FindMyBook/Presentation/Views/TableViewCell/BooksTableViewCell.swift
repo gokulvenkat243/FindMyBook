@@ -31,12 +31,11 @@ class BooksTableViewCell: UITableViewCell {
         return label
     }()
 
-    private let ratingView: UIView = {
-        let view: UIView = UIView.construct()
-        view.backgroundColor = .red
-        return view
+    private let pageCountLable: UILabel = {
+        let label: UILabel = UILabel.construct()
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        return label
     }()
-
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -48,12 +47,11 @@ class BooksTableViewCell: UITableViewCell {
     }
 
     private func setupView() {
-        contentView.addSubviews(bookImageView, titleLabel, authorLabel, ratingView)
+        contentView.addSubviews(bookImageView, titleLabel, authorLabel, pageCountLable)
         self.applyConstraints()
     }
 
     private func applyConstraints() {
-
         NSLayoutConstraint.activate([
             bookImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             bookImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
@@ -68,16 +66,17 @@ class BooksTableViewCell: UITableViewCell {
             authorLabel.leadingAnchor.constraint(equalTo: bookImageView.trailingAnchor, constant: 10),
             authorLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
 
-            ratingView.topAnchor.constraint(equalTo: authorLabel.bottomAnchor, constant: 15),
-            ratingView.leadingAnchor.constraint(equalTo: bookImageView.trailingAnchor, constant: 10),
-            ratingView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            ratingView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            pageCountLable.topAnchor.constraint(equalTo: authorLabel.bottomAnchor, constant: 10),
+            pageCountLable.leadingAnchor.constraint(equalTo: bookImageView.trailingAnchor, constant: 10),
+            pageCountLable.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            pageCountLable.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
         ])
     }
 
     func configure(data: BookItem) {
         titleLabel.text = data.volumeInfo.title
         authorLabel.text = data.volumeInfo.authors?.joined(separator: ", ") ?? "Unknown"
+        pageCountLable.text = "Page Count: \(data.volumeInfo.pageCount ?? 0)"
         if let imageUrl = data.volumeInfo.imageLinks?.thumbnail ?? data.volumeInfo.imageLinks?.smallThumbnail
  {
             print("✅ Unwrapped URL: \(imageUrl)")

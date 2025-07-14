@@ -21,11 +21,18 @@ class HomeViewController: UIViewController {
         return label
     }()
 
-    private let searchBar: UISearchBar = {
-        let searchBar: UISearchBar = UISearchBar.construct()
-        searchBar.placeholder = "Search Books..."
-        searchBar.searchBarStyle = .minimal
-        searchBar.showsCancelButton = true
+    private lazy var searchBar: UISearchBar = {
+        let searchBar: UISearchBar = UISearchBar(frame: .zero)
+        searchBar.sizeToFit()
+        searchBar.isTranslucent = false
+        searchBar.backgroundImage = UIImage()
+        searchBar.layer.cornerRadius = 10
+        searchBar.layer.masksToBounds = true
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        searchBar.backgroundColor = .systemGray6
+        searchBar.searchTextField.backgroundColor = .systemGray6
+        searchBar.barTintColor = .systemGray6
+        searchBar.placeholder = "Search Books..." //TODO: update copies
         return searchBar
     }()
 
@@ -92,9 +99,9 @@ class HomeViewController: UIViewController {
             titleLabel.trailingAnchor.constraint(equalTo: topView.trailingAnchor),
 
             searchBar.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
-            searchBar.leadingAnchor.constraint(equalTo: topView.leadingAnchor, constant: 10),
-            searchBar.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -10),
-            searchBar.heightAnchor.constraint(equalToConstant: 50),
+            searchBar.leadingAnchor.constraint(equalTo: topView.leadingAnchor, constant: 15),
+            searchBar.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -15),
+            searchBar.heightAnchor.constraint(equalToConstant: 45),
 
             popularLabel.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 26),
             popularLabel.leadingAnchor.constraint(equalTo: topView.leadingAnchor, constant: 20),
@@ -112,7 +119,6 @@ class HomeViewController: UIViewController {
     }
 
     private func bindViewModel() {
-
         self.viewModel.updateBooksData = {
             self.tableView.reloadData()
         }
@@ -140,7 +146,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = viewModel.getBooksData(index: indexPath.row)
-        self.viewModel.showBookDetails(id: data.id)
+        self.viewModel.showBookDetails(id: data.id, data: data)
     }
 }
 
@@ -149,6 +155,7 @@ extension HomeViewController: UISearchBarDelegate {
         viewModel.setSearching(true)
         popularLabel.isHidden = true
         searchResultsLabel.isHidden = false
+        searchBar.showsCancelButton = true
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
@@ -157,6 +164,7 @@ extension HomeViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
         popularLabel.isHidden = false
         searchResultsLabel.isHidden = true
+        searchBar.showsCancelButton = false
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
