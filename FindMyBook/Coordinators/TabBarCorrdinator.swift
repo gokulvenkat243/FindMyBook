@@ -29,17 +29,25 @@ final class TabBarCoordinator {
         homeVC.tabBarItem = UITabBarItem(title: "Home",
                                          image: UIImage(systemName: "house"),
                                          selectedImage: UIImage(systemName: "house.fill"))
-        
+
         let favViewModel = DefaultFavoriteBooksViewModel(usecase: useCase, coordinator: coordinator)
         let profileVC = FavoriteBooksViewController(viewModel: favViewModel)
         profileVC.tabBarItem = UITabBarItem(title: "Favorite",
                                             image: UIImage(systemName: "star"),
                                             selectedImage: UIImage(systemName: "star.fill"))
 
+        let historyViewModel = DefaultHistoryViewModel()
+        let historyVC = HistoryViewController(viewModel: historyViewModel)
+        historyVC.tabBarItem = UITabBarItem(title: "History",
+                                            image: UIImage(systemName: "clock"),
+                                            selectedImage: UIImage(systemName: "clock.fill"))
+
         tabBarController.viewControllers = [
             UINavigationController(rootViewController: homeVC),
 
-            UINavigationController(rootViewController: profileVC)
+            UINavigationController(rootViewController: profileVC),
+
+            UINavigationController(rootViewController: historyVC)
         ]
 
         tabBarController.tabBar.tintColor = UIColor.gray

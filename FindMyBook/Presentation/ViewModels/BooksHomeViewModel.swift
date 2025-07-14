@@ -12,7 +12,7 @@ protocol BooksHomeViewModel {
     func numberOfItems() -> Int
     func getBooksData(index: Int) -> BookItem
     var updateBooksData: (() -> Void)? {get set}
-    func showBookDetails(id: String)
+    func showBookDetails(id: String, data: BookItem)
     func searchBooks(query: String)
     func setSearching(_ searching: Bool)
 }
@@ -79,7 +79,8 @@ class DefaultBooksHomeViewModel: BooksHomeViewModel {
         return isSearching ? searchResults.count : trendingBooksData.count
     }
 
-    func showBookDetails(id: String) {
+    func showBookDetails(id: String, data: BookItem) {
         self.coordinator.showProductDetails(id: id)
+        HistoryStorage.shared.addToHistory(data: data)
     }
 }
